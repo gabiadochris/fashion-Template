@@ -1,0 +1,54 @@
+@use "../general/color" as *;
+@use "../general/fonts" as *;
+
+.BGColor {
+  background-color: $pryColor;
+
+  // Hero Section Starts
+  .container {
+    h1 {
+      @include H1Font;
+      // overflow: visible;
+    }
+    p {
+      @include pFont;
+    }
+    .btnOneStyle {
+      height: 8vh;
+      width: 10vw;
+      &:hover {
+        background-color: $WhiteColor !important;
+        color: $SecColor !important;
+      }
+    }
+    .btnTwoStyle {
+      height: 8vh;
+      width: 10vw;
+      &:hover {
+        background-color: $SecColor !important;
+        color: $WhiteColor !important;
+      }
+    }
+  }
+
+  // Hero Section Ends
+}
+// Philosophy Section Starts
+.Philosophy {
+  .RoundedImg {
+    border: 2px solid black;
+    border-top-right-radius: 90em;
+    border-top-left-radius: 90em;
+    padding: 10px;
+    border-top-right-radius: 90em;
+    border-top-left-radius: 90em;
+  }
+
+  h2 {
+    @include H2Font;
+  }
+  p {
+    @include pFont;
+  }
+}
+// Philosophy Section Ends
